@@ -4,8 +4,8 @@ import '@testing-library/jest-dom/extend-expect'
 
 import App from './TestingReact'
 
-
 let submitButton
+
 beforeEach(() => {
   render(<App />)
   submitButton = screen.getByText('Submit Todo')
@@ -51,7 +51,7 @@ describe('<App />', () => {
     expect(button).toBeEnabled() // THIS IS THE IMPORTANT ASSERTION
   })
   test('Can complete a todo', () => {
-
+    
   })
   test('Can submit new todo', () => {
 
