@@ -41,6 +41,6 @@ describe('<App />', () => {
   test('Can hide completed', () => {
     const completed = screen.getByText('Learn React ✔️')
     fireEvent.click(completed)
-    
+    expect(screen.queryByText('Learn React ✔️')).not.toBeIn
   })
 })
