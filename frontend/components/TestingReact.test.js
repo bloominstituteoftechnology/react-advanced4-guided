@@ -35,11 +35,11 @@ describe('<App />', () => {
   test('Can submit new todo', () => {
 
   })
-  test('Submitting clears the input', () => {
+  test.only('Submitting clears the input', () => {
     const input = screen.getByPlaceholderText('Type todo')
     const submit = screen.getByText('Submit Todo')
     fireEvent.change(input, { target: { value: 'do it' } })
-    
+    expect(input).toHaveValue('do it')
   })
   test('Can hide completed', () => {
     const completed = screen.getByText('Learn React ✔️', { exact: false })
