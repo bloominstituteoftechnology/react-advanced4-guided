@@ -38,10 +38,10 @@ describe('<App />', () => {
   test('Submitting clears the input', () => {
 
   })
-  test.only('Can hide completed', () => {
+  test('Can hide completed', () => {
     screen.debug()
-    const completed = screen.getByText('Learn React ✔️', { exact: false })
-    fireEvent.click(completed)
-    expect(screen.queryByText('Learn React ✔️')).not.toBeInTheDocument()
+    // const completed = screen.getByText('Learn React ✔️', { exact: false })
+    // fireEvent.click(completed)
+    // expect(screen.queryByText('Learn React ✔️')).not.toBeInTheDocument()
   })
 })
