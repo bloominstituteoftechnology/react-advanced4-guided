@@ -68,7 +68,7 @@ describe('<App />', () => {
     fireEvent.change(todo, { target: { value: 'Fix vaccuum' } })
     fireEvent.click(button)
     // screen.getByText('Fix vaccuum')
-    expect(todo).toHaveValue('')
+    expect(todo).toHaveValue('') // crucial
   })
   test('Can hide completed', () => {
 
