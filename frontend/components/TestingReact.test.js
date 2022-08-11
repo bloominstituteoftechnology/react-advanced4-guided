@@ -4,7 +4,9 @@ import '@testing-library/jest-dom/extend-expect'
 
 import App from './TestingReact'
 
-beforeEach(() => { console.log('foo') })
+beforeEach(() => {
+  render(<App />)
+})
 afterEach(() => {})
 beforeAll(() => {})
 afterAll(() => {})
