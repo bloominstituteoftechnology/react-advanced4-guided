@@ -57,9 +57,7 @@ describe('<App />', () => {
     screen.getByText('Have fun ✔️')
   })
   test('Can submit new todo', () => {
-    // type a new todo
-    // click the submit btn
-    // assert the the todo appears on the page!
+    fireEvent(todoInput, { target:  { value: 'Learn'}})
   })
   test('Submitting clears the input', () => {
 
