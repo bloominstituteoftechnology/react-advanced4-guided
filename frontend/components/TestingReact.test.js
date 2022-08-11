@@ -7,6 +7,9 @@ import App from './TestingReact'
 beforeEach(() => {
   console.log('foo')
 })
+afterEach(() => {})
+beforeAll(() => {})
+afterAll(())
 
 describe('<App />', () => {
   test('renders without errors', () => {
