@@ -4,8 +4,8 @@ import '@testing-library/jest-dom/extend-expect'
 
 import App from './TestingReact'
 
-let submitButton
 
+let submitButton
 beforeEach(() => {
   render(<App />)
   submitButton = screen.getByText('Submit Todo')
