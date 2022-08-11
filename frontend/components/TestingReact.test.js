@@ -40,7 +40,7 @@ describe('<App />', () => {
     expect(button).toBeDisabled
   })
   test('Typing a character enables the input', () => {
-    
+    const input = screen.
   })
   test('Can complete a todo', () => {
 
