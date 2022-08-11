@@ -8,6 +8,13 @@ beforeEach(() => {
 })
 
 describe('<App /> this is a describe block', () => {
+
+  describe('foo', () => {
+    test('foobar', () => {
+      // actual test
+    })
+  })
+
   test('renders without errors', () => {
 
   })
