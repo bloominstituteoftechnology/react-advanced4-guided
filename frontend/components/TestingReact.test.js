@@ -56,7 +56,7 @@ describe('<App />', () => {
     screen.getByText('Have fun ✔️')
   })
   test('Can submit new todo', () => {
-
+    // 
   })
   test('Submitting clears the input', () => {
 
