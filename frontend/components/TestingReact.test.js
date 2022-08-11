@@ -18,6 +18,8 @@ describe('<App />', () => {
   test.only('Todos: text renders (capture element using queryByText)', () => {
     const todosHeading = screen.getByText('Todos:')
     expect(todosHeading).toBeVisible()
+    expect(todosHeading).toBeEnabled()
+    expect(todosHeading).toBeInTheDocument()
   })
   test('Todos: text renders (capture element using getByText)', () => {
 
