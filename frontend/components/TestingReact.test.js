@@ -7,9 +7,9 @@ import App from './TestingReact'
 beforeEach(() => {
   render(<App />)
 })
-afterEach(() => {})
-beforeAll(() => {})
-afterAll(() => {})
+afterEach(() => { })
+beforeAll(() => { })
+afterAll(() => { })
 
 describe('<App />', () => {
   test('renders without errors', () => {
@@ -34,7 +34,8 @@ describe('<App />', () => {
     screen.getByTestId('todoListHeading')
   })
   test('Submit button is disabled while input empty', () => {
-    // >>> YOU <<<
+    const buttonIsDisabled = screen.getByText('submitToDo')
+    expect(buttonIsDisabled).toBeDisabled()
   })
   test('Typing a character enables the input', () => {
 
