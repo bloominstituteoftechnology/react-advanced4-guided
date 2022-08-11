@@ -54,7 +54,8 @@ describe('<App />', () => {
     // select have fun without checkmark
     // click using fireEvent.click(the have fun element)
     // select have fun with checkmark
-    
+    const todo = screen.getByText('Have fun')
+    screen.click(todo)
   })
   test('Can submit new todo', () => {
 
