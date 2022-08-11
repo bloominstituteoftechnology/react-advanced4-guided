@@ -42,6 +42,7 @@ describe('<App />', () => {
   test('Typing a character enables the input', () => {
     const input = screen.getByPlaceholderText('Type todo')
     const button = screen.getByText('Submit Todo')
+    fireEvent.change()
   })
   test('Can complete a todo', () => {
 
