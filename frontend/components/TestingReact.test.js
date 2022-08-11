@@ -56,6 +56,7 @@ describe('<App />', () => {
     // select have fun with checkmark
     const todo = screen.getByText('Have fun')
     screen.click(todo)
+    screen.getByText('Have fun ✔️')
   })
   test('Can submit new todo', () => {
 
