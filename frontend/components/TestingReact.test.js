@@ -40,10 +40,12 @@ describe('<App />', () => {
     expect(button).toBeDisabled
   })
   test('Typing a character enables the input', () => {
+    expect(button).toBeEnabled()
     const input = screen.getByPlaceholderText('Type todo')
     const button = screen.getByText('Submit Todo')
     fireEvent.change(input, { target: { value: 'A' } })
     expect(input).toHaveValue('A') // sanity
+    expect(button).toBeEnabled()
   })
   test('Can complete a todo', () => {
 
