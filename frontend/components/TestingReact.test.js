@@ -57,6 +57,7 @@ describe('<App />', () => {
     screen.getByText('Have fun ✔️')
   })
   test('Can submit new todo', () => {
+    // the elements of interest are captured in the 'beforeEach' at the top (DRY)
     fireEvent.change(todoInput, { target: { value: 'Learn lots of JavaScript' } })
     fireEvent.click(submitButton)
     screen.getByText('Learn lots of JavaScript')
