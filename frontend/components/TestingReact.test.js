@@ -40,6 +40,8 @@ describe('<App />', () => {
     const submit = screen.getByText('Submit Todo')
     fireEvent.change(input, { target: { value: 'do it' } })
     expect(input).toHaveValue('do it')
+    fireEvent.click(submit)
+    expect(input).toHaveValue('do it')
   })
   test('Can hide completed', () => {
     const completed = screen.getByText('Learn React ✔️', { exact: false })
