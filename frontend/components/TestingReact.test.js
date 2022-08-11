@@ -74,6 +74,6 @@ describe('<App />', () => {
     const todo = screen.getByText('Learn React ✔️')
     const hide = screen.getByText('Hide Completed')
     fireEvent.click(hide)
-    expect(todo).not.toBeVisible() // justin strikes again!
+    expect(todo).not.toBeInTheDocument() // justin strikes again!
   })
 })
