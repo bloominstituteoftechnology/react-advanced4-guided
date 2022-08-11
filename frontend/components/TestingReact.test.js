@@ -4,7 +4,7 @@ import '@testing-library/jest-dom/extend-expect'
 import App from './TestingReact'
 
 beforeEach(() => {
-
+  render(<App />)
 })
 
 describe('<App />', () => {
@@ -39,9 +39,8 @@ describe('<App />', () => {
 
   })
   test('Can hide completed', () => {
-    screen.debug()
-    // const completed = screen.getByText('Learn React ✔️', { exact: false })
-    // fireEvent.click(completed)
-    // expect(screen.queryByText('Learn React ✔️')).not.toBeInTheDocument()
+    const completed = screen.getByText('Learn React ✔️', { exact: false })
+    fireEvent.click(completed)
+    expect(screen.queryByText('Learn React ✔️')).not.toBeInTheDocument()
   })
 })
