@@ -8,8 +8,8 @@ let submitButton, todoInput
 
 beforeEach(() => {
   render(<App foo="bar" />)
-  submitButton = screen.getByText('Submit Todo')
-  todoInput = screen.getByPlaceholderText('Type todo')
+  submitButton = screen.queryByText('Submit Todo')
+  todoInput = screen.queryByPlaceholderText('Type todo')
 })
 afterEach(() => { })
 beforeAll(() => { })
