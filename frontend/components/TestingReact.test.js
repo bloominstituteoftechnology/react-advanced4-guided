@@ -27,7 +27,7 @@ describe('<App />', () => {
     expect(notThere).not.toInTheDocument()
   })
   test.only('Todos: text renders (capture element using querySelector)', () => {
-    const h2 = document.querySelector('h2')
+    const h2 = document.querySelector('h2') // kinda like a backdoor
     expect(h2).toBeInTheDocument()
   })
   test('Todos: text renders (capture element using data attribute)', () => {
