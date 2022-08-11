@@ -28,6 +28,7 @@ describe('<App />', () => {
   })
   test.only('Todos: text renders (capture element using querySelector)', () => {
     const h2 = document.querySelector('h2')
+    expect(h2).toBeInTheDocument()
   })
   test('Todos: text renders (capture element using data attribute)', () => {
 
