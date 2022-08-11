@@ -6,9 +6,6 @@ import App from './TestingReact'
 beforeEach(() => {
   render(<App />)
 })
-afterEach(() => {
-  document.body.innerHTML = ''
-})
 
 describe('<App />', () => {
   test('renders without errors', () => {
