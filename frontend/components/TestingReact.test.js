@@ -17,7 +17,7 @@ describe('<App />', () => {
   })
   test.only('Todos: text renders (capture element using queryByText)', () => {
     const todosHeading = screen.getByText('Todos:')
-    tod
+    expect(todosHeading).toBeVisible()
   })
   test('Todos: text renders (capture element using getByText)', () => {
 
