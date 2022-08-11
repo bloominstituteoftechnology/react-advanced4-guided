@@ -71,7 +71,7 @@ describe('<App />', () => {
     expect(todo).toHaveValue('') // justin rules!
   })
   test('Can hide completed', () => {
-    const todo = screen.getByText('Learn React :heavy_check_mark:')
+    const todo = screen.getByText('Learn React ✔️')
     const hide = screen.getByText('Hide Completed')
     fireEvent.click(hide)
     expect(todo).not.toBeVisible()
