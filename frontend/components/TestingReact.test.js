@@ -31,7 +31,7 @@ describe('<App />', () => {
     expect(h2).toBeInTheDocument()
   })
   test('Todos: text renders (capture element using data attribute)', () => {
-    screen.getByTestId('ajskldfhasjkdlfhasdkljfhalkjsfhalkjfhsaklj')
+    screen.getByTestId('todoListHeading')
   })
   test('Submit button is disabled while input empty', () => {
 
