@@ -8,7 +8,7 @@ let submitButton
 
 beforeEach(() => {
   render(<App />)
-  submitButton = screen.
+  submitButton = screen.getByText('Submit Todo')
 })
 afterEach(() => { })
 beforeAll(() => { })
