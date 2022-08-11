@@ -44,11 +44,11 @@ describe('<App />', () => {
   })
   test('Typing a character enables the input', () => {
     const input = screen.getByPlaceholderText('Type todo')
-    const button = screen.getByText('Submit Todo')
-    expect(button).not.toBeEnabled() // sanity, normally AVOID TESTING THINGS more than once
+    // const button = screen.getByText('Submit Todo')
+    expect(submitButton).not.toBeEnabled() // sanity, normally AVOID TESTING THINGS more than once
     fireEvent.change(input, { target: { value: 'A' } })
     expect(input).toHaveValue('A') // sanity but should probably be tested elsewhere
-    expect(button).toBeEnabled() // THIS IS THE IMPORTANT ASSERTION
+    expect(submitButton).toBeEnabled() // THIS IS THE IMPORTANT ASSERTION
   })
   test('Can complete a todo', () => {
 
