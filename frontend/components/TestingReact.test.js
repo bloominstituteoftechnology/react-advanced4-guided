@@ -35,7 +35,7 @@ describe('<App />', () => {
   test('Can submit new todo', () => {
 
   })
-  test.only('Submitting clears the input', () => {
+  test('Submitting clears the input', () => {
 
   })
   test('Can hide completed', () => {
