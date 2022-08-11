@@ -44,8 +44,8 @@ describe('<App />', () => {
     const input = screen.getByPlaceholderText('Type todo')
     const button = screen.getByText('Submit Todo')
     fireEvent.change(input, { target: { value: 'A' } })
-    expect(input).toHaveValue('A') // sanity
-    expect(button).toBeEnabled()
+    expect(input).toHaveValue('A') // sanity but should probably be tested elsewhere
+    expect(button).toBeEnabled() // THIS IS THE IMPORTANT ASSERTION
   })
   test('Can complete a todo', () => {
 
