@@ -19,6 +19,7 @@ describe('<App />', () => {
     const todosHeading = screen.getByText('Todos:')
     expect(todosHeading).toBeVisible()
     expect(todosHeading).toBeEnabled()
+    expect(todosHeading).toBeDisabled()
     expect(todosHeading).toBeInTheDocument()
   })
   test('Todos: text renders (capture element using getByText)', () => {
