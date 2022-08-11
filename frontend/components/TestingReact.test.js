@@ -20,14 +20,14 @@ describe('<App />', () => {
     expect(todosHeading).toBeInTheDocument()
     expect(todosHeading).toBeVisible()
   })
-  test.only('Todos: text renders (capture element using queryByText)', () => {
+  test('Todos: text renders (capture element using queryByText)', () => {
     const todosHeading = screen.queryByText('Todos:') // fails if more than one is found
     expect(todosHeading).toBeInTheDocument()
     const notThere = screen.queryByText('Text of an element that is not here')
     expect(notThere).not.toInTheDocument()
   })
   test.only('Todos: text renders (capture element using querySelector)', () => {
-    const h2
+    const h2 = document.querySelector('h2')
   })
   test('Todos: text renders (capture element using data attribute)', () => {
 
