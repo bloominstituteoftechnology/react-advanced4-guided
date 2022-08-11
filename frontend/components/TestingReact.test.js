@@ -7,7 +7,7 @@ import App from './TestingReact'
 let submitButton, todoInput
 
 beforeEach(() => {
-  render(<App />)
+  render(<App foo="bar" />)
   submitButton = screen.getByText('Submit Todo')
   todoInput = screen.getByPlaceholderText('Type todo')
 })
