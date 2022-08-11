@@ -7,27 +7,20 @@ beforeEach(() => {
 
 })
 
-describe('<App /> this is a describe block', () => {
-
-  describe('foo', () => {
-    test('foobar', () => {
-      // actual test
-    })
-  })
-
-  test('renders without errors', () => {
+describe('<App />', () => {
+  it('renders without errors', () => {
 
   })
-  test('Todos: text renders (capture element using queryByText)', () => {
+  it('Todos: text renders (capture element using queryByText)', () => {
 
   })
-  test('Todos: text renders (capture element using getByText)', () => {
+  it('Todos: text renders (capture element using getByText)', () => {
 
   })
-  test('Todos: text renders (capture element using querySelector)', () => {
+  it('Todos: text renders (capture element using querySelector)', () => {
 
   })
-  test('Todos: text renders (capture element using data attribute)', () => {
+  it('Todos: text renders (capture element using data attribute)', () => {
 
   })
   test('Submit button is disabled while input empty', () => {
