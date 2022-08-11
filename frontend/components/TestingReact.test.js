@@ -22,6 +22,7 @@ describe('<App />', () => {
   })
   test.only('Todos: text renders (capture element using queryByText)', () => {
     const todosHeading = screen.queryByText('Todos:')
+    expect(todosHeading).toBeInTheDocument()
     const notThere = screen.queryByText('Text of an element that is not here')
     expect(notThere).not.toInTheDocument()
   })
