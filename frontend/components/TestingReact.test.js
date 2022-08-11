@@ -43,6 +43,7 @@ describe('<App />', () => {
     const input = screen.getByPlaceholderText('Type todo')
     const button = screen.getByText('Submit Todo')
     fireEvent.change(input, { target: { value: 'A' } })
+    screen.debug()
   })
   test('Can complete a todo', () => {
 
