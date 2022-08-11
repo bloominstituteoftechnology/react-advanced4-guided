@@ -26,8 +26,8 @@ describe('<App />', () => {
     const notThere = screen.queryByText('Text of an element that is not here')
     expect(notThere).not.toInTheDocument()
   })
-  test('Todos: text renders (capture element using querySelector)', () => {
-
+  test.only('Todos: text renders (capture element using querySelector)', () => {
+    const h2
   })
   test('Todos: text renders (capture element using data attribute)', () => {
 
