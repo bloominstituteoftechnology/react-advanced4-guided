@@ -63,7 +63,7 @@ describe('<App />', () => {
     screen.getByText('Learn lots of JavaScript')
   })
   test('Submitting clears the input', () => {
-
+    
   })
   test('Can hide completed', () => {
 
