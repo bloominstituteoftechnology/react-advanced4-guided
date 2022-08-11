@@ -39,6 +39,6 @@ describe('<App />', () => {
 
   })
   test('Can hide completed', () => {
-
+    const completed = screen.getByText('Learn React ✔️')
   })
 })
