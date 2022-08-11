@@ -4,7 +4,7 @@ import '@testing-library/jest-dom/extend-expect'
 import App from './TestingReact'
 
 beforeEach(() => {
-  render(<App />)
+
 })
 
 describe('<App />', () => {
@@ -36,16 +36,9 @@ describe('<App />', () => {
 
   })
   test.only('Submitting clears the input', () => {
-    const input = screen.getByPlaceholderText('Type todo')
-    const submit = screen.getByText('Submit Todo')
-    fireEvent.change(input, { target: { value: 'do it' } })
-    expect(input).toHaveValue('do it')
-    fireEvent.click(submit)
-    expect(input).toHaveValue('')
+
   })
   test('Can hide completed', () => {
-    const completed = screen.getByText('Learn React ✔️', { exact: false })
-    fireEvent.click(completed)
-    expect(screen.queryByText('Learn React ✔️')).not.toBeInTheDocument()
+
   })
 })
