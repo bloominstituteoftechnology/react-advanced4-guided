@@ -36,7 +36,7 @@ describe('<App />', () => {
 
   })
   test('Submitting clears the input', () => {
-
+    
   })
   test('Can hide completed', () => {
     const completed = screen.getByText('Learn React ✔️', { exact: false })
