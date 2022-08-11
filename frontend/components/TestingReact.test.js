@@ -54,7 +54,7 @@ describe('<App />', () => {
     // select have fun without checkmark
     // click using fireEvent.click(the have fun element)
     // select have fun with checkmark
-    // YOU!!!!!!!!!
+    
   })
   test('Can submit new todo', () => {
 
