@@ -5,7 +5,7 @@ import '@testing-library/jest-dom/extend-expect'
 import App from './TestingReact'
 
 beforeEach(() => {
-
+  
 })
 
 describe('<App />', () => {
