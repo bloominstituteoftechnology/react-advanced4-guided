@@ -7,7 +7,7 @@ beforeEach(() => {
 
 })
 
-describe('<App />', () => {
+describe('<App /> this is a describe block', () => {
   test('renders without errors', () => {
 
   })
