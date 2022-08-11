@@ -40,9 +40,9 @@ describe('<App />', () => {
     expect(button).toBeDisabled
   })
   test('Typing a character enables the input', () => {
-    // expect(button).not.toBeEnabled() // sanity, normally AVOID TESTING THINGS more than once
     const input = screen.getByPlaceholderText('Type todo')
     const button = screen.getByText('Submit Todo')
+    expect(button).not.toBeEnabled() // sanity, normally AVOID TESTING THINGS more than once
     fireEvent.change(input, { target: { value: 'A' } })
     expect(input).toHaveValue('A') // sanity but should probably be tested elsewhere
     expect(button).toBeEnabled() // THIS IS THE IMPORTANT ASSERTION
