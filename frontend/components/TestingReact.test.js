@@ -15,7 +15,7 @@ describe('<App />', () => {
   test('renders without errors', () => {
     // screen.debug()
   })
-  test('Todos: text renders (capture element using queryByText)', () => {
+  test.only('Todos: text renders (capture element using queryByText)', () => {
 
   })
   test('Todos: text renders (capture element using getByText)', () => {
