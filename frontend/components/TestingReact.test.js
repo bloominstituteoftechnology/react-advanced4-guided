@@ -34,8 +34,10 @@ describe('<App />', () => {
     screen.getByTestId('todoListHeading')
   })
   test('Submit button is disabled while input empty', () => {
-    const buttonIsDisabled = screen.getByText('submit todo', { exact: false })
-    expect(buttonIsDisabled).toBeDisabled()
+    // const buttonIsDisabled = screen.getByText('submit todo', { exact: false })
+    // expect(buttonIsDisabled).toBeDisabled()
+    const button = screen.getByText(/Submit Todo/i)
+    expect(button).toBeDisabled
   })
   test('Typing a character enables the input', () => {
 
