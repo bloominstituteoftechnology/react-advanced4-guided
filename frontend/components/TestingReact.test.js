@@ -59,7 +59,7 @@ describe('<App />', () => {
   test('Can submit new todo', () => {
     fireEvent(todoInput, { target: { value: 'Learn lots of JavaScript' } })
     fireEvent(submitButton)
-    e
+    screen.getByText('Learn lots of JavaScript')
   })
   test('Submitting clears the input', () => {
 
