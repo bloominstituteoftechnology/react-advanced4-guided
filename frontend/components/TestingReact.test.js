@@ -5,17 +5,15 @@ import '@testing-library/jest-dom/extend-expect'
 import App from './TestingReact'
 
 beforeEach(() => {
-  render(<div>web 57 is awesome</div>)
+  render(<App />)
 })
 
 describe('<App />', () => {
   test('renders without errors', () => {
-    render(<div>web 57 is awesome</div>)
-    // write test
+    screen.debug()
   })
   test('Todos: text renders (capture element using queryByText)', () => {
-    render(<div>web 57 is awesome</div>)
-    // write test
+
   })
   test('Todos: text renders (capture element using getByText)', () => {
 
