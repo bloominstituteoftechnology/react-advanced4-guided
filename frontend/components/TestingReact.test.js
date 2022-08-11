@@ -36,7 +36,8 @@ describe('<App />', () => {
 
   })
   test('Submitting clears the input', () => {
-    
+    const input = screen.getByPlaceholderText('Type todo')
+    const submit = screen.getByText('')
   })
   test('Can hide completed', () => {
     const completed = screen.getByText('Learn React ✔️', { exact: false })
