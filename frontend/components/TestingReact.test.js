@@ -63,7 +63,12 @@ describe('<App />', () => {
     screen.getByText('Learn lots of JavaScript')
   })
   test('Submitting clears the input', () => {
-    
+    const todo = screen.getByPlaceholderText('Type todo')
+    const button = screen.getByText('Submit Todo')
+    fireEvent.change(todo, { target: { value: 'Fix vaccuum' } })
+    fireEvent.click(button)
+    screen.getByText('Fix vaccuum')
+    expect(todo).toHaveValue('')
   })
   test('Can hide completed', () => {
 
