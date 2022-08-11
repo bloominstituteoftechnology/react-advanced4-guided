@@ -51,7 +51,8 @@ describe('<App />', () => {
     expect(button).toBeEnabled() // THIS IS THE IMPORTANT ASSERTION
   })
   test('Can complete a todo', () => {
-    // 
+    // select have fun without checkmark
+    // click using fireEvent.click(element)
   })
   test('Can submit new todo', () => {
 
