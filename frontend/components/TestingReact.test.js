@@ -52,7 +52,7 @@ describe('<App />', () => {
   })
   test('Can complete a todo', () => {
     // select have fun without checkmark
-    // click using fireEvent.click(element)
+    // click using fireEvent.click(the have fun element)
     // select have fun with checkmark
     // YOU!!!!!!!!!
   })
