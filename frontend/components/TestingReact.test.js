@@ -51,9 +51,6 @@ describe('<App />', () => {
     expect(button).toBeEnabled() // THIS IS THE IMPORTANT ASSERTION
   })
   test('Can complete a todo', () => {
-    // select have fun without checkmark
-    // click using fireEvent.click(the have fun element)
-    // select have fun with checkmark
     const todo = screen.getByText('Have fun')
     fireEvent.click(todo)
     screen.getByText('Have fun ✔️')
