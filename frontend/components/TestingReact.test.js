@@ -16,7 +16,7 @@ describe('<App />', () => {
     // screen.debug()
   })
   test.only('Todos: text renders (capture element using queryByText)', () => {
-    const todosHeading = screen.getByText('Todos:')
+    const todosHeading = screen.getByText('Todos:asdkfjasd;lfkjad;sklj')
   })
   test('Todos: text renders (capture element using getByText)', () => {
 
