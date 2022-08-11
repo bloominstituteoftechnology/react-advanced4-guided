@@ -10,10 +10,12 @@ beforeEach(() => {
 
 describe('<App />', () => {
   test('renders without errors', () => {
-    screen.debug()
+    render(<div>web 57 is awesome</div>)
+    // write test
   })
   test('Todos: text renders (capture element using queryByText)', () => {
-
+    render(<div>web 57 is awesome</div>)
+    // write test
   })
   test('Todos: text renders (capture element using getByText)', () => {
 
